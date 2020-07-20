@@ -1,5 +1,6 @@
 document.querySelector(".button-one").addEventListener('click', taskOne);
 document.querySelector(".button-two").addEventListener('click', taskTwo);
+document.querySelector(".button-three").addEventListener('click', taskThree);
 
 function taskOne() {
 	// Задача про максимум из 4-х чисел
@@ -39,4 +40,30 @@ function taskTwo() {
 	}
 }
 
+function taskThree() {
+	// Задача про високосный год
+	let tempNumber = prompt(`Введите год`);
+	for (; Number.isNaN(Number(tempNumber)) || tempNumber.includes(".") || tempNumber.includes("-") || Number(tempNumber) === 0;) {
+		tempNumber = prompt("Введено некорректное значение. Попробуйте еще раз");
+	}
 
+	const year = Number.parseInt(tempNumber);
+	let flag = false;
+	if (year % 4 === 0) {
+		flag = true;
+		if (year % 100 === 0) {
+			flag = false;
+		}
+		if (year % 400 === 0) {
+			flag = true;
+		}
+	}
+
+	if (flag === true) {
+		console.log(`Год \"${year}\" високосный (366 дней)`);
+		alert(`Год \"${year}\" високосный (366 дней)`);
+	} else {
+		console.log(`Год \"${year}\" не високосный (365 дней)`);
+		alert(`Год \"${year}\" не високосный (365 дней)`);
+	}
+}
