@@ -1,0 +1,43 @@
+body {
+  @include font();
+}
+
+.section {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  margin: 0px;
+}
+
+.is-hidden {
+  position: absolute;
+  color: transparent;
+  font-size: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  top: 0px;
+  left: 0px;
+  clip: rect(0 0 0 0);
+  border: none;
+}

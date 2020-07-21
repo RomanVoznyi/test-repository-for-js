@@ -4,46 +4,205 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/style.css">
+	<link
+		  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+	<link rel="stylesheet" href="./css/index.min.css">
 	<title>Test tasks</title>
 </head>
 
 <body>
-
 	<!-- Tasks practice -->
+	<section class="section">
+		<h1 class="main-title">Тренировка JS</h1>
+		<ul class="task-list">
+			<li class="task-item">
+				<h2 class="task-title">Задача 1</h2>
+				<p class="task-description">Получить с клавиатуры 4 числа и вывести на экран
+					максимальное и минимальное из них.
+				</p>
+				<button class="button-result button-1">Результат работы</button>
+				<a class="solution-link" href="./js/task1.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 2</h2>
+				<p class="task-description">Есть 9-ти этажный дом, в котором 4 подъезда. Номер подъезда начинается с
+					единицы. На этаже 4 квартиры. Получить номер квартиры с клавиатуры и вывести информацию на
+					каком этаже какого подъезда находится эта квартира. Если такой квартиры нет в доме - нужно сообщить
+					об этом пользователю.
+				</p>
+				<button class="button-result button-2">Результат работы</button>
+				<a class="solution-link" href="./js/task2.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 3</h2>
+				<p class="task-description">Проверить является ли год, введеный пользователем с
+					клавиатуры, високосным (366 дней) или нет (365 дней). (Год является високосным, если он кратен 4, не
+					кратен 100, но кратен 400).
+				</p>
+				<button class="button-result button-3">Результат работы</button>
+				<a class="solution-link" href="./js/task3.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 4</h2>
+				<p class="task-description">Пользователь вводит с клавиатуры целое число. Необходимо:
+					a) показать сколько в данном числе цифр и какая наибольшая цифра числа;
+					б) проверить, является ли введенное число четным;
+					в) перевернуть число и вывести на экран (например, было 12345 - стало 54321);
+					г) показать на экран сумму цифр в числе;
+					д) посчитать факториал числа (n! = 1*2*3*....*n; 0! = 1).
+				</p>
+				<button class="button-result button-4">Результат работы</button>
+				<a class="solution-link" href="./js/task4.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 5</h2>
+				<p class="task-description">Пользователь вводит целое положительное 4-х-значное число, поменять местами
+					цифры 1-ю со 2-й и 3-ю с 4-й. Если число не 4-х значное - вывести сообщение.
+				</p>
+				<button class="button-result button-5">Результат работы</button>
+				<a class="solution-link" href="./js/task5.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 6</h2>
+				<p class="task-description">Пользователь вводит 6-ти значное число, определить является ли число
+					счастливым (сумма первых 3-х цифр равна сумме
+					вторых 3-х цифр).
+				</p>
+				<button class="button-result button-6">Результат работы</button>
+				<a class="solution-link" href="./js/task6.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 7</h2>
+				<p class="task-description">С клавиатуры вводятся n чисел. Определить кол-во отрицательных, кол-во
+					положительных, кол-во чисел, равных нулю, кол-во нечетных.
+				</p>
+				<button class="button-result button-7">Результат работы</button>
+				<a class="solution-link" href="./js/task7.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 8</h2>
+				<p class="task-description">Найти сумму всех целых нечетных чисел в диапазоне, указанном пользователем.
+				</p>
+				<button class="button-result button-8">Результат работы</button>
+				<a class="solution-link" href="./js/task8.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 9</h2>
+				<p class="task-description">Найти сумму всех целых чисел от n до m включительно.
+				</p>
+				<button class="button-result button-9">Результат работы</button>
+				<a class="solution-link" href="./js/task9.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 10</h2>
+				<p class="task-description">Математический блок:
+					а) вывод всех двухзначных чисел, кратных 5;
+					б) найте все четырехзначные числа, сумма цифр каждого из которых равна 15;
+					в) даны натуральные числа от 20 до 50. Вывести те из них, которые делятся на 3, но не делятся на 5;
+					г) вывести на экран квадраты чисел от 10 до 20 включительно;
+					д) подсчитать, сколько чисел от 1 до 100 делится на 3 без остатка.
+				</p>
+				<button class="button-result button-10">Результат работы</button>
+				<a class="solution-link" href="./js/task10.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 11</h2>
+				<p class="task-description">Поменять местами две целочисленных переменных:
+					а) с использованием третьей переменной
+					б) без использования третьей переменной
+				</p>
+				<button class="button-result button-11">Результат работы</button>
+				<a class="solution-link" href="./js/task11.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 12</h2>
+				<p class="task-description">Даны три стороны треугольника, вывести на экран: существует ли такой
+					треугольник и его тип (равносторонний,
+					равнобедренный, прямоугольный, разносторонний).
+				</p>
+				<button class="button-result button-12">Результат работы</button>
+				<a class="solution-link" href="./js/task12.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 13</h2>
+				<p class="task-description">Вывести на экран линию из символов. Число символов, какой использовать
+					символ, и какая
+					будет линия - вертикальная, или горизонтальная - указывает пользователь.
+				</p>
+				<button class="button-result button-13">Результат работы</button>
+				<a class="solution-link" href="./js/task13.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 14</h2>
+				<p class="task-description">Если сумма трех x,y,z различных числел больше 100, то наименьшее из этих
+					чисел - заменить полусуммой двух других,
+					иначе - меньшее из x и y заменить суммой оставшихся.
+				</p>
+				<button class="button-result button-14">Результат работы</button>
+				<a class="solution-link" href="./js/task14.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 15</h2>
+				<p class="task-description">На часах h часов m минут и S секунд. Вывести время через одну секунду.
+				</p>
+				<button class="button-result button-15">Результат работы</button>
+				<a class="solution-link" href="./js/task15.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 16</h2>
+				<p class="task-description">Одноклеточная амеба каждые 3 часа делится на 2 клетки. Определить, сколько
+					амеб будет через 3, 6, 9, 12,..., 24 часа.
+				</p>
+				<button class="button-result button-16">Результат работы</button>
+				<a class="solution-link" href="./js/task16.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 17</h2>
+				<p class="task-description">Начав тренировки, лыжник в первый день пробежал 10 км. Каждый следующий день
+					он увеличивал пробeг на 10% от пробега
+					предыдущего дня. Определить в какой день суммарный пробег за все дни превысит 100 км.
+				</p>
+				<button class="button-result button-17">Результат работы</button>
+				<a class="solution-link" href="./js/task17.js" target="_blank">посмотреть код</a>
+			</li>
+			<li class="task-item">
+				<h2 class="task-title">Задача 18</h2>
+				<p class="task-description">Дана комната без окон и дверей. В комнате на стены необходимо поклеить обои.
+					Пользователь вводит:
+					1) Длину и ширину рулона обоев
+					2) Высоту, ширину и длину комнаты
+					Расчитать сколько рулонов обоев нужно для поклейки:
+					1) С использованием остатков
+					2) Без использования остатков
+				</p>
+				<button class="button-result button-18">Результат работы</button>
+				<a class="solution-link" href="./js/task18.js" target="_blank">посмотреть код</a>
+			</li>
+		</ul>
+		</ul>
 
-	<h1 class="main-title">Тренировка JS</h1>
-	<ul class="task-list">
-		<li class="task-item">
-			<h2 class="task-title">Задача 1</h2>
-			<p class="task-description">Написать код, который считает с клавиатуры 4 числа и выведет на экран самое
-				большое из них.
-			</p>
-			<button class="button button-one">Результат работы</button>
-		</li>
-		<li class="task-item">
-			<h2 class="task-title">Задача 2</h2>
-			<p class="task-description">Есть 9-ти этажный дом, в котором 4 подъезда. Номер подъезда начинается с
-				единицы. На этаже 4 квартиры. Написать код, который получит номер квартиры с клавиатуры и выведет на
-				каком этаже какого подъезда находится эта квартира. Если такой квартиры нет в доме - нужно сообщить об
-				этом пользователю.
-			</p>
-			<button class="button button-two">Результат работы</button>
-		</li>
-		<li class="task-item">
-			<h2 class="task-title">Задача 3</h2>
-			<p class="task-description">Написать код, который определяет является год, введеный пользователем с
-				клавиатуры, високосным (366 дней) или нет (365 дней). (Год является високосным, если он кратен 4, не
-				кратен 100, но кратен 400).
-			</p>
-			<button class="button button-three">Результат работы</button>
-		</li>
-	</ul>
+		<p style="font-style: italic; font-weight: 700">to be continued...</p>
+	</section>
 
-	<p style="font-style: italic; font-weight: 700">to be continued...</p>
+	<script src="./js/task1.js" type="module"></script>
+	<script src="./js/task2.js" type="module"></script>
+	<script src="./js/task3.js" type="module"></script>
+	<script src="./js/task4.js" type="module"></script>
+	<script src="./js/task5.js" type="module"></script>
+	<script src="./js/task6.js" type="module"></script>
+	<script src="./js/task7.js" type="module"></script>
+	<script src="./js/task8.js" type="module"></script>
+	<script src="./js/task9.js" type="module"></script>
+	<script src="./js/task10.js" type="module"></script>
+	<script src="./js/task11.js" type="module"></script>
+	<script src="./js/task12.js" type="module"></script>
+	<script src="./js/task13.js" type="module"></script>
+	<script src="./js/task14.js" type="module"></script>
+	<script src="./js/task15.js" type="module"></script>
+	<script src="./js/task16.js" type="module"></script>
+	<script src="./js/task17.js" type="module"></script>
+	<script src="./js/task18.js" type="module"></script>
 
-
-	<script src="./index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+//flexContainer
+@mixin flex($base: center, $cross: center) {
+  display: flex;
+  justify-content: $base;
+  align-items: $cross;
+}
+
+//font style
+@mixin font(
+  $weight: 400,
+  $size: 14px,
+  $height: 1.1,
+  $spacing: 0.02em,
+  $family: "Roboto"
+) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+  font-family: $family, sans-serif;
+}
+
+@mixin all-space() {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
