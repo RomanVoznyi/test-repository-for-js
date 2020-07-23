@@ -12,6 +12,8 @@ document.querySelector(".button-6").addEventListener('click', () => {
 	}
 	const happy = leftSum === rightSum ? "счастливый" : "не является счастливым билетом";
 
-	console.log(`Билет номер ${tempNumber} - ${happy}`);
-	alert(`Билет номер ${tempNumber} - ${happy}`);
+	const message = `Билет номер ${tempNumber} - ${happy}`;
+
+	console.log(message);
+	alert(message);
 });

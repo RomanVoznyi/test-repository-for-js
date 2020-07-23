@@ -13,7 +13,8 @@ document.querySelector(".button-9").addEventListener('click', () => {
 	const end = Math.floor(Math.max(Number(tempNumbOne), Number(tempNumbTwo)));
 	const count = end - start + 1;
 
-	console.log(`В диапазоне [${Math.min(Number(tempNumbOne), Number(tempNumbTwo))} : ${Math.max(Number(tempNumbOne), Number(tempNumbTwo))}] количество целых чисел - \"${count}\"`);
-	alert(`В диапазоне [${Math.min(Number(tempNumbOne), Number(tempNumbTwo))} : ${Math.max(Number(tempNumbOne), Number(tempNumbTwo))}] количество целых чисел - \"${count}\"`);
+	const message = `В диапазоне [${Math.min(Number(tempNumbOne), Number(tempNumbTwo))} : ${Math.max(Number(tempNumbOne), Number(tempNumbTwo))}] количество целых чисел - \"${count}\"`;
 
+	console.log(message);
+	alert(message);
 });

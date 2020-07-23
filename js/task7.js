@@ -16,7 +16,10 @@ document.querySelector(".button-7").addEventListener('click', () => {
 		arrayNumb[i] % 2 === 0 ? arrayCount[3]++ : arrayCount[4]++;
 	}
 
-	console.log(`В массиве \"${arrayNumb}\":\n отрицательных чисел - \"${arrayCount[0]}\",\n положительных чисел - \"${arrayCount[1]}\",\n
-	чисел равных нулю - \"${arrayCount[2]}\",\n четных чисел - \"${arrayCount[3]}\",\n нечетных чисел - \"${arrayCount[4]}\"`);
-	alert(`В массиве \"${arrayNumb}\":\n отрицательных чисел - \"${arrayCount[0]}\",\n положительных чисел - \"${arrayCount[1]}\",\n чисел равных нулю - \"${arrayCount[2]}\",\n четных чисел - \"${arrayCount[3]}\",\n нечетных чисел - \"${arrayCount[4]}\"`);
+	let message = `В массиве \"${arrayNumb}\":\n отрицательных чисел - \"${arrayCount[0]}\",\n`;
+	message += ` положительных чисел - \"${arrayCount[1]}\",\n чисел равных нулю - \"${arrayCount[2]}\",\n`;
+	message += ` четных чисел - \"${arrayCount[3]}\",\n нечетных чисел - \"${arrayCount[4]}\"`;
+
+	console.log(message);
+	alert(message);
 });

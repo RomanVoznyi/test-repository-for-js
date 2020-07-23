@@ -28,17 +28,12 @@ document.querySelector(".button-4").addEventListener('click', () => {
 		factorial = factorial * i;
 	}
 
-	console.log(
-		`a) Число \"${numb}\" - \"${sign}\", состоит из \"${countDigit}\" чисел, максимальная цифра - \"${maxDigit}\"\n`,
-		`б) Число \"${numb}\" - \"${parity}\"\n`,
-		`в) Если перевернуть число \"${numb}\" получится \"${reversNumb.join("")}\"\n`,
-		`г) Сумма цифр в числе \"${numb}\" равна \"${sumDigits}\"\n`,
-		`д) Факториал числа \"${Math.abs(numb)}\" равен \"${factorial}\"`);
+	let message = `a) Число \"${numb}\" - \"${sign}\", состоит из \"${countDigit}\" чисел, максимальная цифра - \"${maxDigit}\"\n`;
+	message += `б) Число \"${numb}\" - \"${parity}\"\n`;
+	message += `в) Если перевернуть число \"${numb}\" получится \"${reversNumb.join("")}\"\n`;
+	message += `г) Сумма цифр в числе \"${numb}\" равна \"${sumDigits}\"\n`;
+	message += `д) Факториал числа \"${Math.abs(numb)}\" равен \"${factorial}\"`;
 
-	alert(
-		`a) Число \"${numb}\" - \"${sign}\", состоит из \"${countDigit}\" чисел, максимальная цифра - \"${maxDigit}\"\n
-б) Число \"${numb}\" - \"${parity}\"\n
-в) Если перевернуть число \"${numb}\" получится \"${reversNumb.join("")}\"\n
-г) Сумма цифр в числе \"${numb}\" равна \"${sumDigits}\"\n
-д) Факториал числа \"${Math.abs(numb)}\" равен \"${factorial}\"`);
+	console.log(message);
+	alert(message);
 });

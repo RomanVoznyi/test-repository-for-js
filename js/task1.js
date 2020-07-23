@@ -11,6 +11,9 @@ document.querySelector(".button-1").addEventListener('click', () => {
 	}
 	const maxNumber = Math.max(...arrayNumb);
 	const minNumber = Math.min(...arrayNumb);
-	console.log(`В массиве [${arrayNumb}] максимум - это число \"${maxNumber}\", минимум - это число \"${minNumber}\"`);
-	alert(`В массиве [${arrayNumb}] максимум - это число \"${maxNumber}\", минимум - это число \"${minNumber}\"`);
+
+	const message = `В массиве [${arrayNumb}] максимум - это число \"${maxNumber}\", минимум - это число \"${minNumber}\"`;
+
+	console.log(message);
+	alert(message);
 });

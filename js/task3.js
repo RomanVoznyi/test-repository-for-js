@@ -11,6 +11,8 @@ document.querySelector(".button-3").addEventListener('click', () => {
 		if (year % 100 === 0) { flag = false; }
 		if (year % 400 === 0) { flag = true; }
 	}
-	console.log(flag === true ? `Год \"${year}\" високосный (366 дней)` : `Год \"${year}\" не високосный (365 дней)`);
-	alert(flag === true ? `Год \"${year}\" високосный (366 дней)` : `Год \"${year}\" не високосный (365 дней)`);
+	const message = flag === true ? `Год \"${year}\" високосный (366 дней)` : `Год \"${year}\" не високосный (365 дней)`;
+
+	console.log(message);
+	alert(message);
 });

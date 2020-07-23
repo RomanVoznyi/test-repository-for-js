@@ -10,6 +10,8 @@ document.querySelector(".button-5").addEventListener('click', () => {
 		changeNumber[i + 1] = tempNumber[i];
 	}
 
-	console.log(`Из числа ${tempNumber} получилось число ${changeNumber.join("")}`);
-	alert(`Из числа ${tempNumber} получилось число ${changeNumber.join("")}`);
+	const message = `Из числа ${tempNumber} получилось число ${changeNumber.join("")}`;
+
+	console.log(message);
+	alert(message);
 });
